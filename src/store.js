@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import {getData,pigPrice,pigFenShi} from './api/all'
+import {getData,pigPrice,pigFenShi,pigPinglun} from './api/all'
 
 Vue.use(Vuex)
 
@@ -25,6 +25,11 @@ export default new Vuex.Store({
     },
     async pigFenShi_({commit},params){
       return await pigFenShi(params);
-    }
+    },
+    async pigPingLun_({commit},params){
+      console.log("pig--------")
+      return await pigPinglun(params);
+    },
+
   }
 })

@@ -26,3 +26,11 @@ export function pigFenShi(params) {
         params
     })
 }
+export function pigPinglun(params) {
+    return axios.request({
+        methods: 'get',
+        url: 'post_list',
+        params
+        
+    })
+}
